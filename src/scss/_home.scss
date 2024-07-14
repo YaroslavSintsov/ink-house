@@ -1,0 +1,19 @@
+.container{
+    margin-left: 200px;
+}
+.span{
+    color: $colorHeaderInk;
+}
+.h1{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: right;
+    position: relative;
+    display: flexbox;
+}
+.bird{
+    background-image: url(/img/Layer\ 0\ 1\ \(1\).svg);
+    height: 700px;
+    width: 600px;
+    background-size: cover;
+}
