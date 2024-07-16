@@ -75,6 +75,7 @@ body {
   min-width: $minWidth + px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 body {
   color: $mainColor;
@@ -90,6 +91,7 @@ body {
   // scrollbar-width: thin;
   // scrollbar-color: $sb-thumb $bg; // Бегунок, дорожка
   // Скролл заблокирован
+  height: 2000px;
   .lock & {
     // overflow: hidden;
     touch-action: none;
