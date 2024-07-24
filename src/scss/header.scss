@@ -37,11 +37,8 @@ html.lock{
             margin-right: 50px;
         }
         .i3{
-            width: 40px;
-            margin-right: 50px;
-        }
-        .i4{
-            margin: 0;
+            width: 90px;
+            padding-right: 40px;
         }
     }
 }
@@ -87,24 +84,16 @@ html.lock{
             margin-top: 40px;
             margin-left:-10px;
             .i3{
-                margin: 0;
-                width: 85vw;
-                width: 0px;
+                padding-right: 0;
             }
             .items{
-                margin-right: 20px;
-                padding: 0;
-                width: 100%;
-            }
-            .i4{
-                display: flexbox;
-                text-align: end;
-                margin-right: -20px;
+                padding-right: 20px;
             }
         }
         .nav .i4{
             justify-content: end;
             text-align: end;
+            padding-right: 20px;
         }
     }
     .head .links .items{
@@ -130,7 +119,18 @@ html.lock{
 @media screen and (max-width:355px) {
     .head{
         .logo{
-            width: 80%;
+            margin-left: -50px;
+        }
+        .links{
+            .items{
+                margin-left: 5px;
+            }
+            .i3{
+                margin-left: -25px;
+            }
+            .i4{
+                margin-left: -20px;
+            }
         }
         .links{
             .i4{
@@ -146,7 +146,7 @@ html.lock{
 .i-1{
     display: none;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
     .head{
         .i-1{
             display: block;
@@ -168,32 +168,6 @@ html.lock{
             z-index: 10000000000000000000000000;
             text-align: center;
             margin-left: 0px;
-            &__name{
-                margin-top: 10px;
-                margin-left: 10px;
-            }
-            &__img{
-                margin-top: 10px;
-            }
-        }
-        .links{
-            text-align: start;
-            justify-content: start;
-            align-items: start;
-            position: fixed;
-            width: 320vw;
-            height: 100%;
-            .i3{
-                margin-left: 20px;
-                width: 90px;
-                margin-top: 40px;
-            }
-            .i-1{
-                margin-top: -90px;
-            }
-            .items{
-                font-size: 26px;
-            }
         }
         // .links{
         //     background-color: $headerBackground;
@@ -205,6 +179,7 @@ html.lock{
         // }
         .i4{
             opacity: 0;
+            display: none;
         }
     }
     .i-1{
@@ -226,15 +201,15 @@ html.lock{
         cursor: pointer;
         position: relative;
         border-radius: 20%;
+        padding-right: 20px;
         margin-left: 280px;
-        margin-left: -140px;
+        margin-left: -150px;
         border: 0;
         z-index: 20000;
         border-radius: mixed;
+        padding-left: 20px;
         display: flex;
         flex-direction: column;
-        text-align: start;
-        align-items: start;
     }
     .header{
         height: 100px;
@@ -248,11 +223,6 @@ html.lock{
         height: 2px;
         transition: 1s;
         z-index: 2051;
-        border-radius: 25px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-left: 5px;
     }
 
     .btn-line:nth-child(1) {
@@ -310,9 +280,8 @@ html.lock{
 
     .links {
         position: fixed;
-        left: 0;
-        top: -100vh;
-        height: 100vh;
+        top: 0;
+        left: -100vh;
         background-color: $headerBackground;
         padding: 190px 20px;
         /* transform: translateY(-100%); */
@@ -322,42 +291,12 @@ html.lock{
         font-size: 10px;
         display: block;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        .i3{
-            padding-left: 0px;
-            margin-left: 20px;
-            position: relative;
-        }
-        padding: 0;
-        padding-top: 40px;
+        justify-content: center;
+        align-items: center;
     }
 
     .items {
-        padding: 0px 0 20px;
         font-size: 26px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-        align-items: center;
-        width: 400px;
-    }
-    .links .items:nth-child(3){
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-top: 40px;
-        width: 100%;
-    }
-    .links .items:nth-child(2){
-        margin-top: 40px;
-        margin-left: 25px;
-        width: 100%;
-        padding-left: 0;
-    }
-    .links .items:nth-child(1){
-        margin-top: 40px;
-        margin-left: 24px;
-        width: 100%;
-        padding-left: 0;
     }
 
     .telefone {
@@ -366,6 +305,8 @@ html.lock{
 
     .menu-open .links {
         top: 0px;
+        transition: 0.3s;
+        z-index: 2000;
         height: 100vh;
     }
 
