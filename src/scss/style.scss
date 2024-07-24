@@ -88,10 +88,10 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: auto;
   // scrollbar-width: thin;
   // scrollbar-color: $sb-thumb $bg; // Бегунок, дорожка
   // Скролл заблокирован
-  height: 2000px;
   .lock & {
     // overflow: hidden;
     touch-action: none;
@@ -220,3 +220,5 @@ body {
 
 // Подключение стилей отдельных страниц
 @import '_home';
+body{
+}

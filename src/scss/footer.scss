@@ -1,0 +1,140 @@
+.footer{
+    height: 150px;
+    background-color: $headerBackground;
+    padding-top: 30px;
+}
+.footer__container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+.foot{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    gap: 100px;
+    .block__cont{
+        justify-content: center;
+        display: flexbox;
+    }
+    .logo{
+        margin-top: -40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+        padding-top: 0;
+        gap: 10px;
+        .logo__name{
+            font-weight: 800;
+            color: $colorHeaderInk;
+        }
+    }
+    .block__cont{
+        margin-top: -40px;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        gap: 50px;
+        padding-right: 30px;
+        .light{
+            color: $colorAfter;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .l1{
+            position: absolute;
+        }
+        .l2{
+            position: absolute;
+        }
+        .l3{
+            position: absolute;
+        }
+    }
+    .sot-set{
+        text-align: start;
+        padding-right: 20px;
+        justify-content: end;
+        .href{
+            text-decoration: none;
+            color: $colorAfter;
+            font-size: 12px;
+            margin-left: 12px;
+        }
+    }
+    .sot-item{
+        gap: 10px;
+        padding-left: 10px;
+        height: 23px;
+    }
+}
+.nomer{
+    margin-top: 20px;
+}
+.light1{
+    color: $colorAfter;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.telephone{
+    position: absolute;
+    padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    .footer{height: 200px;}
+    .telephone{
+        margin-top: -50px;
+        width: 93vw;
+        text-align: end;
+    }
+    .foot{
+        .block__cont{
+            margin-top: 50px;
+            margin-left: -210px;
+        }
+        .sot-set{
+            position: absolute;
+            width: 130vw;
+            margin-top: 120px;
+            text-align: end;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer{height: 300px;}
+    .telephone{
+        margin-top: -50px;
+        width: 93vw;
+        text-align: end;
+    }
+    .foot{
+        .block__cont{
+            margin-top: 50px;
+            margin-left: -210px;
+        }
+        .sot-set{
+            width: 70%;
+            justify-content: center;
+            border-top: 1px $colorAfter solid;
+            padding-top: 20px;
+            padding-top: 20px;
+            margin-left: 20vw;
+            .sot-item{
+                padding-top: 0px;
+                margin-top: 20px;
+            }
+            padding: 0;
+            margin-top: 320px;
+            text-align: center;
+            .href{
+                display: inline-flex;
+                margin-top: 5px;
+                .href{
+                    .br{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
