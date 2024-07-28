@@ -62,43 +62,63 @@
     color: $colorAfter;
 }
 @media screen and (max-width: 768px) {
-    .foot{
-    }
-    .block-three2{
-        display: none;
+    .footer{
+        height: 200px;
     }
     .block-three{
-        margin-top: -90px;
-        width: 93vw;
-        text-align: end;
-        justify-content: end;
-        display: block;
-        position: absolute;
-    }
-    .block-two{
-        width: 93vw;
-        justify-content: end;
-        position: absolute;
-        margin-top: 20px;
+        display: none;
     }
     .block-cont{
-        margin-top: 50px;
-        margin-left: -210px;
+        margin-top: 30px;
     }
-    .block-one{
-        margin-top: -20px;
+    .block-two{
+        margin-top: 60px;
+    }
+    .block-three2{
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        justify-content: end;
+        text-align: end;
+        width: 89.5vw;
+    }
+}
     }
 }
 @media screen and (max-width: 576px) {
     .footer{
-        height: 230px;
+        height: 330px;
+    }
+    .block-three{
+        display: none;
+    }
+    .block-cont{
+        margin-top: 30px;
     }
     .block-two{
-        border-top: 1px $colorAfter solid;
         margin-top: 200px;
         text-align: center;
+        display: flex;
         justify-content: center;
-        padding-top: 20px;
+        width: 92vw;
+        position: absolute;
+    }
+    .block-two::after{
+        content: '';
+        height: 1px;
+        width: 100%;
+        margin-left: -15px;
+        margin-top: -20px;
+        position: absolute;
+        background-color: $colorAfter;
+    }
+    .block-three2{
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        justify-content: end;
+        text-align: end;
+        width: 89.5vw;
     }
 }
 @media screen and (max-width: 370px) {
@@ -106,31 +126,25 @@
         height: 400px;
     }
     .block-two{
-        margin-top: 400px;
+        margin-top: 270px;
     }
-    .b3{
-        margin-top: 120px;
-        margin-left: 80px;
-        padding-right: 20px;
-        position: relative;
+    .block-three2{
+        text-align: start;
+        margin-top: 65px;
     }
     .b1{
-        margin-left: 180px;
-        padding-right: 20px;
-        position: relative;
+        position: absolute;
+        justify-content: end;
+        margin-left: 60vw;        
     }
     .b2{
-        text-align: start;
-        margin-left: -330px;
-        margin-top: 120px;
+        position: absolute;
+        margin-top: 100px;
+    }
+    .b3{
+        position: absolute;
+        margin-top: 100px;
         justify-content: end;
-        position: relative;
-    }
-    .block-three{
-        text-align: start;
-        margin-top: -110px;
-    }
-    .block-two{
-        width: 87vw;
+        margin-left: 60vw;
     }
 }
