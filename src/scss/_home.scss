@@ -13,6 +13,7 @@
 .page__container{
     margin: 0 auto;
     position: relative;
+    justify-content: center;
 }
 .page__up{
     position: relative;
@@ -71,7 +72,7 @@
     .strain{
         justify-items: end;
     }
-    padding-left: 5vw;
+    padding-left: 30px;
 }
 .world .strain{
     position: relative;
@@ -137,7 +138,8 @@
 .img-cont{
     position: relative;
     padding-right: 0;
-    padding-left: 30px;
+    padding-left: 0px;
+    margin-left: -15px;
 }
 .c1{
     display: none;
@@ -154,13 +156,14 @@
 }
 .page__middle__down{
     padding: 0;
-    width: 100vw;
+    width: 110vw;
     background-image: url(/img/pic_background.png);
     height: 574px;
     padding-left: 100px;
     padding-top: 50px;
     position: relative;
     color: white;
+    margin-left: -20px;
     .h3{
         font-weight: 500;
         margin-top: -70px;
@@ -193,10 +196,10 @@
 .text-cont{
     display: flexbox;
     margin-top: -280px;
-    width: 350px;
+    max-width: 350px;
     margin-left: 340px;
     .h4{
-        font-size: 35px;
+        font-size: 26px;
         font-weight: 500;
     }
     .img1{
@@ -333,7 +336,7 @@
         padding-bottom: 20px;
     }
     .cart-name{
-        font-size: 25px;
+        font-size: 20px;
     }
     .img-cont{
         margin-top: 100px;
@@ -346,12 +349,39 @@
             width: 100%;
         }
     }
+    .world{
+        padding-left: 0;
+    }
+    .frame{
+        margin-left: 5vw;
+    }
+    .p{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 370px) {
     .light-text{
         font-size: 3.8vw;
         margin-left: 0;
         width: 80vw;
+    }
+    .frame{
+        margin-left: 25px;
+    }
+    .text-cont
+    .img1{
+        height: 23vw;
+        width: 23vw;
+    }
+    .text-cont
+    .img2{
+        height: 23vw;
+        width: 31.5vw;
+    }
+    .text-cont
+    .img3{
+        height: 23vw;
+        width: 31.5vw;
     }
     .text-block{
         font-size: 8.2vw;
@@ -381,15 +411,15 @@
         padding-left: 0;
     }
     .h3{
-        font-size: 20px;
+        font-size: 7vw;
     }
     .btn{
         width: 30vw;
     }
     .page__down{
         .group{
-            width: 90vw;
-            height: 90vw;
+            width: 80vw;
+            height: 80vw;
         }
         width: 100%;
     }
