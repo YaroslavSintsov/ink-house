@@ -87,36 +87,67 @@
     .footer{
         height: 330px;
     }
+    .footer__container{
+    }
     .block-three{
         display: none;
+    }
+    .block-one{
+        margin-left: -6px;
     }
     .block-cont{
         margin-top: 30px;
     }
     .block-two{
-        margin-top: 200px;
+        // margin-top: 200px;
+        // text-align: center;
+        // display: flex;
+        // justify-content: center;
+        // width: 92.5vw;
+        // position: absolute;
+        display: flexbox;
         text-align: center;
-        display: flex;
+        position: absolute;
+        margin-left: 0px;
+        width: 90%;
+        margin-top: 180px;
         justify-content: center;
-        width: 91.5vw;
-        position: absolute;
+        border-top: 1px solid $colorAfter;
+        justify-content: center;
+        margin-left: -2px;
+        padding-bottom: 10px;
+        padding-top: 20px;
     }
-    .block-two::after{
-        content: '';
-        height: 1px;
-        width: 100%;
-        margin-left: -15px;
-        margin-top: -20px;
-        position: absolute;
-        background-color: $colorAfter;
+    .block-cont{
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
     }
+    .b2{
+
+    }
+    .b3{
+    }
+    // .block-two::after{
+    //     content: '';
+    //     height: 1px;
+    //     width: 100%;
+    //     margin-left: -15px;
+    //     margin-top: -20px;
+    //     position: absolute;
+    //     background-color: $colorAfter;
+    // }
     .block-three2{
         display: block;
         margin-top: 10px;
         position: absolute;
         justify-content: end;
         text-align: end;
-        width: 89.5vw;
+        width: 90.4vw;
+    }
+    .href1{
+        display: flex;
+        gap: 10px;
     }
 }
 @media screen and (max-width: 370px) {
@@ -130,19 +161,41 @@
         text-align: start;
         margin-top: 65px;
     }
+    .foot{
+        width: 200vw;
+    }
+    .block-two{
+        width: 91.5vw;
+        margin-left: -5px;
+    }
+    .footer__container{
+        justify-content: center;
+    }
     .b1{
         position: absolute;
         justify-content: end;
-        margin-left: 60vw;        
+        margin-left: 60vw;
     }
     .b2{
         position: absolute;
         margin-top: 100px;
+        margin-left: 6px;
+    }
+    .logo{
+        margin-left: 5px;
     }
     .b3{
         position: absolute;
         margin-top: 100px;
         justify-content: end;
         margin-left: 60vw;
+    }
+}
+@media screen and (max-width: 240px) {
+    .b1{
+        padding-left: 20px;
+    }
+    .b3{
+        padding-left: 20px;
     }
 }

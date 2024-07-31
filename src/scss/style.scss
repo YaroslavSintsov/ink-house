@@ -220,5 +220,7 @@ body {
 
 // Подключение стилей отдельных страниц
 @import '_home';
-body{
+html body{
+  scroll-behavior: smooth;
+  transition: 5s all ease;
 }
