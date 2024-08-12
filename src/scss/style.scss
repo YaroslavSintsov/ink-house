@@ -5,6 +5,8 @@
 
 // Подключение миксинов
 @import 'base/mixins';
+a{
+}
 
 // Подключение шрифтов
 // &display=swap - добавить при подключении из google fonts
@@ -39,6 +41,19 @@ $iconsColor: #EEDB6D;
 $promoBackground: #0D2B43;
 body{
   overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color: $colorAllText;
+}
+p{
+  color: $colorAllText;
+}
+h1 h2 h3 h4 h5 h6{
+  color: $colorAllText;
+}
+span{
+  color: #2C2D35;
 }
 
 // НАСТРОЙКИ
@@ -77,6 +92,9 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+html body .lock{
+  overflow: hidden;
+}
 body {
   color: $mainColor;
   line-height: 1;
@@ -93,7 +111,7 @@ body {
   // scrollbar-color: $sb-thumb $bg; // Бегунок, дорожка
   // Скролл заблокирован
   .lock & {
-    // overflow: hidden;
+    overflow: hidden;
     touch-action: none;
   }
 
@@ -223,4 +241,7 @@ body {
 html body{
   scroll-behavior: smooth;
   transition: 5s all ease;
+}
+body{
+  transition: 0;
 }

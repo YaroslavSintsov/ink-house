@@ -1,241 +1,261 @@
 <!DOCTYPE html>
 <html lang="ru">
-  
   <body>
   @@include('html/head.html',{ "title":"Ink-House", "description":"Описание" })
     <div class="wrapper">
       @@include('html/header.html',{})
       <main class="page">
         <div class="page__container">
-          <div class="page__up">
-            <img src="/img/bird.svg" class="bird">
-            <div class="text-block">
-              Реплики картин <br> от <span class="span">Ink. House</span>
-              <p class="light-text">
-                Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
-              </p>
-              <button class="production">Продукция</button>
+          <!-- <div class="page__up">
+            <div class="up__container">
+              <img src="/img/bird.svg" class="bird">
+              <div class="text-block">
+                Реплики картин <br> от <span class="span">Ink. House</span>
+                <p class="light-text">
+                  Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения,
+                  доступные цены.
+                </p>
+                <button class="production">Продукция</button>
+              </div>
             </div>
           </div>
           <div class="page__middle">
-            <div class="middle-cont">
-              
-            </div>
-            <div class="page__middle__up">
-              <div class="world">
-                <p class="p">Репродукции</p>
-                <div class="btn__container">
-                  <button class="strain" id="s1">Франция</button>
-                  <button class="strain" id="s2">Германия</button>
-                  <button class="strain" id="s3">Англия</button>
+            <div class="middle__container">
+              <div class="page__middle__up">
+                <div class="world">
+                  <p class="p">Репродукции</p>
+                  <div class="btn__container">
+                    <button class="strain" id="s1">Франция</button>
+                    <button class="strain" id="s2">Германия</button>
+                    <button class="strain" id="s3">Англия</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="page__middle__middle" id="cart">
-              <div class="images">
-                <div class="img-cont" id="i1">
-                  <div class="frame f1">
-                    <div class="img10">
-                      <img src="/img/03-12.png" class="img">
-                      <p class="light-name">Марсель Руссо</p>
-                      <p class="cart-name">Охота Амура</p>
-                      <p class="type">Холст, масло (50х80) </p>
-                      <p class="price">14 500 руб</p>
-                      <button class="corsine">В корзину</button>
+              <div class="page__middle__middle" id="cart">
+                <div class="images___container">
+                  <div class="img-cont" id="i1">
+                    <div class="frame f1">
+                      <div class="img10">
+                        <img src="/img/03-12.png" class="img">
+                        <p class="light-name">Марсель Руссо</p>
+                        <p class="cart-name">Охота Амура</p>
+                        <p class="type">Холст, масло (50х80) </p>
+                        <p class="price">14 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f2">
+                      <div class="img10">
+                        <img src="/img/03-13.png" class="img">
+                        <p class="light-name">Анри Селин</p>
+                        <p class="cart-name">Дама с собачкой</p>
+                        <p class="type">Акрил, бумага (50х80) </p>
+                        <p class="price">16 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f3">
+                      <div class="img10">
+                        <img src="/img/03-14.png" class="img">
+                        <p class="light-name">Франсуа Дюпон</p>
+                        <p class="cart-name">Процедура</p>
+                        <p class="type">Цветная литография (40х60) </p>
+                        <p class="price">20 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f4">
+                      <div class="img10">
+                        <img src="/img/03-15.png" class="img">
+                        <p class="light-name">Луи Детуш</p>
+                        <p class="cart-name">Роза</p>
+                        <p class="type">Акрил, бумага (50х80) </p>
+                        <p class="price">12 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f5">
+                      <div class="img10">
+                        <img src="/img/03-16.png" class="img">
+                        <p class="light-name">Франсуа Дюпон</p>
+                        <p class="cart-name">Птичья трапеза</p>
+                        <p class="type">Цветная литография (40х60)</p>
+                        <p class="price">22 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f6">
+                      <div class="img10">
+                        <img src="/img/03-17.png" class="img">
+                        <p class="light-name">Пьер Моранж</p>
+                        <p class="cart-name">Пейзаж с рыбой</p>
+                        <p class="type">Цветная литография (40х60) </p>
+                        <p class="price">20 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="frame f2">
-                    <div class="img10">
-                      <img src="/img/03-13.png" class="img">
-                      <p class="light-name">Анри Селин</p>
-                      <p class="cart-name">Дама с собачкой</p>
-                      <p class="type">Акрил, бумага (50х80) </p>
-                      <p class="price">16 500 руб</p>
-                      <button class="corsine">В корзину</button>
+                  <div class="img-cont c2" id="i2">
+                    <div class="frame f7">
+                      <div class="img10">
+  
+                        <img src="/img/03.png" class="img">
+                        <p class="light-name">Марсель Руссо</p>
+                        <p class="cart-name">Охота Амура</p>
+                        <p class="type">Холст, масло (50х80) </p>
+                        <p class="price">14 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f8">
+                      <div class="img10">
+  
+                        <img src="/img/03-1.png" class="img">
+                        <p class="light-name">Анри Селин</p>
+                        <p class="cart-name">Дама с собачкой</p>
+                        <p class="type">Акрил, бумага (50х80) </p>
+                        <p class="price">16 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f9">
+                      <div class="img10">
+  
+                        <img src="/img/03-2.png" class="img">
+                        <p class="light-name">Франсуа Дюпон</p>
+                        <p class="cart-name">Процедура</p>
+                        <p class="type">Цветная литография (40х60) </p>
+                        <p class="price">20 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f10">
+                      <div class="img10">
+  
+                        <img src="/img/03-3.png" class="img">
+                        <p class="light-name">Луи Детуш</p>
+                        <p class="cart-name">Роза</p>
+                        <p class="type">Акрил, бумага (50х80) </p>
+                        <p class="price">12 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f11">
+                      <div class="img10">
+  
+                        <img src="/img/03-4.png" class="img">
+                        <p class="light-name">Франсуа Дюпон</p>
+                        <p class="cart-name">Птичья трапеза</p>
+                        <p class="type">Цветная литография (40х60)</p>
+                        <p class="price">22 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="frame f12">
+                      <div class="img10">
+  
+                        <img src="/img/03-5.png" class="img">
+                        <p class="light-name">Пьер Моранж</p>
+                        <p class="cart-name">Пейзаж с рыбой</p>
+                        <p class="type">Цветная литография (40х60) </p>
+                        <p class="price">20 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="frame f3">
-                    <div class="img10">
-                      <img src="/img/03-14.png" class="img">
-                      <p class="light-name">Франсуа Дюпон</p>
-                      <p class="cart-name">Процедура</p>
-                      <p class="type">Цветная литография (40х60) </p>
-                      <p class="price">20 000 руб</p>
-                      <button class="corsine">В корзину</button>
+                  <div class="img-cont c2" id="i3">
+                    <div class="frame f13">
+                      <div class="img10">
+                        <img src="/img/03-6.png" class="img">
+                        <p class="light-name">Марсель Руссо</p>
+                        <p class="cart-name">Охота Амура</p>
+                        <p class="type">Холст, масло (50х80) </p>
+                        <p class="price">14 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="frame f4">
-                    <div class="img10">
-                      <img src="/img/03-15.png" class="img">
-                      <p class="light-name">Луи Детуш</p>
-                      <p class="cart-name">Роза</p>
-                      <p class="type">Акрил, бумага (50х80) </p>
-                      <p class="price">12 000 руб</p>
-                      <button class="corsine">В корзину</button>
+                    <div class="frame f14">
+                      <div class="img10">
+                        <img src="/img/03-7.png" class="img">
+                        <p class="light-name">Анри Селин</p>
+                        <p class="cart-name">Дама с собачкой</p>
+                        <p class="type">Акрил, бумага (50х80) </p>
+                        <p class="price">16 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="frame f5">
-                    <div class="img10">
-                      <img src="/img/03-16.png" class="img">
-                      <p class="light-name">Франсуа Дюпон</p>
-                      <p class="cart-name">Птичья трапеза</p>
-                      <p class="type">Цветная литография (40х60)</p>
-                      <p class="price">22 500 руб</p>
-                      <button class="corsine">В корзину</button>
+                    <div class="frame f15">
+                      <div class="img10">
+                        <img src="/img/03-8.png" class="img">
+                        <p class="light-name">Франсуа Дюпон</p>
+                        <p class="cart-name">Процедура</p>
+                        <p class="type">Цветная литография (40х60) </p>
+                        <p class="price">20 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="frame f6">
-                    <div class="img10">
-                      <img src="/img/03-17.png" class="img">
-                      <p class="light-name">Пьер Моранж</p>
-                      <p class="cart-name">Пейзаж с рыбой</p>
-                      <p class="type">Цветная литография (40х60) </p>
-                      <p class="price">20 000 руб</p>
-                      <button class="corsine">В корзину</button>
+                    <div class="frame f16">
+                      <div class="img10">
+                        <img src="/img/03-9.png" class="img">
+                        <p class="light-name">Луи Детуш</p>
+                        <p class="cart-name">Роза</p>
+                        <p class="type">Акрил, бумага (50х80) </p>
+                        <p class="price">12 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="img-cont c2" id="i2">
-                  <div class="frame f7">
-                    <div class="img10">
-
-                      <img src="/img/03.png" class="img">
-                      <p class="light-name">Марсель Руссо</p>
-                      <p class="cart-name">Охота Амура</p>
-                      <p class="type">Холст, масло (50х80) </p>
-                      <p class="price">14 500 руб</p>
-                      <button class="corsine">В корзину</button>
+                    <div class="frame f17">
+                      <div class="img10">
+                        <img src="/img/03-10.png" class="img">
+                        <p class="light-name">Франсуа Дюпон</p>
+                        <p class="cart-name">Птичья трапеза</p>
+                        <p class="type">Цветная литография (40х60)</p>
+                        <p class="price">22 500 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="frame f8">
-                    <div class="img10">
-
-                      <img src="/img/03-1.png" class="img">
-                      <p class="light-name">Анри Селин</p>
-                      <p class="cart-name">Дама с собачкой</p>
-                      <p class="type">Акрил, бумага (50х80) </p>
-                      <p class="price">16 500 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f9">
-                    <div class="img10">
-
-                      <img src="/img/03-2.png" class="img">
-                      <p class="light-name">Франсуа Дюпон</p>
-                      <p class="cart-name">Процедура</p>
-                      <p class="type">Цветная литография (40х60) </p>
-                      <p class="price">20 000 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f10">
-                    <div class="img10">
-
-                      <img src="/img/03-3.png" class="img">
-                      <p class="light-name">Луи Детуш</p>
-                      <p class="cart-name">Роза</p>
-                      <p class="type">Акрил, бумага (50х80) </p>
-                      <p class="price">12 000 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f11">
-                    <div class="img10">
-
-                      <img src="/img/03-4.png" class="img">
-                      <p class="light-name">Франсуа Дюпон</p>
-                      <p class="cart-name">Птичья трапеза</p>
-                      <p class="type">Цветная литография (40х60)</p>
-                      <p class="price">22 500 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f12">
-                    <div class="img10">
-
-                      <img src="/img/03-5.png" class="img">
-                      <p class="light-name">Пьер Моранж</p>
-                      <p class="cart-name">Пейзаж с рыбой</p>
-                      <p class="type">Цветная литография (40х60) </p>
-                      <p class="price">20 000 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="img-cont c2" id="i3">
-                  <div class="frame f13">
-                    <div class="img10">
-                      <img src="/img/03-6.png" class="img">
-                      <p class="light-name">Марсель Руссо</p>
-                      <p class="cart-name">Охота Амура</p>
-                      <p class="type">Холст, масло (50х80) </p>
-                      <p class="price">14 500 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f14">
-                    <div class="img10">
-                      <img src="/img/03-7.png" class="img">
-                      <p class="light-name">Анри Селин</p>
-                      <p class="cart-name">Дама с собачкой</p>
-                      <p class="type">Акрил, бумага (50х80) </p>
-                      <p class="price">16 500 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f15">
-                    <div class="img10">
-                      <img src="/img/03-8.png" class="img">
-                      <p class="light-name">Франсуа Дюпон</p>
-                      <p class="cart-name">Процедура</p>
-                      <p class="type">Цветная литография (40х60) </p>
-                      <p class="price">20 000 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f16">
-                    <div class="img10">
-                      <img src="/img/03-9.png" class="img">
-                      <p class="light-name">Луи Детуш</p>
-                      <p class="cart-name">Роза</p>
-                      <p class="type">Акрил, бумага (50х80) </p>
-                      <p class="price">12 000 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f17">
-                    <div class="img10">
-                      <img src="/img/03-10.png" class="img">
-                      <p class="light-name">Франсуа Дюпон</p>
-                      <p class="cart-name">Птичья трапеза</p>
-                      <p class="type">Цветная литография (40х60)</p>
-                      <p class="price">22 500 руб</p>
-                      <button class="corsine">В корзину</button>
-                    </div>
-                  </div>
-                  <div class="frame f18">
-                    <div class="img10">
-                      <img src="/img/03-11.png" class="img">
-                      <p class="light-name">Пьер Моранж</p>
-                      <p class="cart-name">Пейзаж с рыбой</p>
-                      <p class="type">Цветная литография (40х60) </p>
-                      <p class="price">20 000 руб</p>
-                      <button class="corsine">В корзину</button>
+                    <div class="frame f18">
+                      <div class="img10">
+                        <img src="/img/03-11.png" class="img">
+                        <p class="light-name">Пьер Моранж</p>
+                        <p class="cart-name">Пейзаж с рыбой</p>
+                        <p class="type">Цветная литография (40х60) </p>
+                        <p class="price">20 000 руб</p>
+                        <button class="corsine">В корзину</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="page__down" id="about">
+            <div class="page2__container">
+              <img src="/img/about.png" class="group">
+              <div class="text-cont">
+                <h1 class="h4">Наша команда</h1>
+                <p class="text-container">
+                  Значимость этих проблем настолько очевидна, что базовый вектор развития
+                  позволяет оценить значение экспериментов,
+                  поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться
+                  от того, что консультация с широким активом.
+                </p>
+                <img src="/img/Ellipse30.png" alt="" class="img1">
+                <img src="/img/Ellipse31.jpg" alt="" class="img2">
+                <img src="/img/Ellipse32.jpg" alt="" class="img3">
+              </div>
+            </div>
+          </div> -->
         </div>
-        <div class="page__middle__down" id="new">
-          <div class="down-content">
+        <!-- <div class="page__middle__down" id="new">
+          <div class="new-collection__container">
             <img src="/img/Star2.png" class="star">
             <h1 class="h3">Новая коллекция <br> французских авторов</h1>
             <p class="text">
-              Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые
-              , в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+              Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям,
+              которые
+              , в свою очередь, должны быть заблокированы в рамках своих собственных рациональных
+              ограничений.
               <br><br>
               Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую
               востребованность направлений прогрессивного развития.
@@ -244,20 +264,7 @@
               Ознакомиться
             </button>
           </div>
-        </div>
-        <div class="page__down" id="about">
-          <img src="/img/about.png" class="group">
-          <div class="text-cont">
-            <h1 class="h4">Наша команда</h1>
-            <p class="text-container">
-              Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов,
-              поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.
-            </p>
-            <img src="/img/Ellipse30.png" alt="" class="img1">
-            <img src="/img/Ellipse31.jpg" alt="" class="img2">
-            <img src="/img/Ellipse32.jpg" alt="" class="img3">
-          </div>
-        </div>
+        </div> -->
       </main>
       @@include('html/footer.html',{})
     </div>
