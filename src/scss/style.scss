@@ -156,8 +156,10 @@ body {
 }
 
 // Оболочка
+.material-symbols-outlined{
+  font-size: 40px;
+}
 .wrapper {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -240,8 +242,8 @@ body {
 @import '_home';
 html body{
   scroll-behavior: smooth;
-  transition: 5s all ease;
 }
 body{
   transition: 0;
+  padding: 0;
 }
