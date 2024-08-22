@@ -142,6 +142,20 @@ a{
     }
     .logo::before{
         display: none;
+        height: 1px;
+    }
+    .menu-open .btn-line:nth-child(1){
+        transform: scale(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(45deg);
+        margin-top: -1px;
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scale(0);
     }
     .header{
         padding: 0;
@@ -161,4 +175,69 @@ a{
     .btn-line{
         padding: 0;
     }
+    .menu-open .link-two{
+        gap: 0;
+    }
+    .links{
+        overflow: hidden;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 20px;
+        margin-left: -100%;
+        background-color: $headerBackground;
+        width: 100vw;
+        font-size: 18px;
+        z-index: 1;
+        margin-left: -20px;
+        transition: all 1s ease;
+    }
+    .menu-open .links{
+        margin-top: 0;
+        margin-left: -20px;
+        display: flex;
+        transition: all 1.5s ease;
+        z-index: 1;
+    }
+    .menu-open .logo{
+        z-index: 1000;
+        transition: all 0.5s ease;
+    }
+    .link:nth-child(4){
+        display: none;
+    }
+    .menu-open .header{
+        height: 100vh;
+        overflow: hidden;
+    }
+    .material-symbols-outlined:nth-child(2){
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    html.menu-open{
+        overflow: hidden;
+    }
+    .nav-block{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+}
+body{
+    padding: 0;
+    transition: 0;
+}
+@media screen and (max-height: 275px) {
+    .menu-open .header{
+        overflow: auto;
+    }
+    .links{
+        overflow: auto;
+    }
+}
+.material-symbols-outlined{
+    font-size: 40px;
 }
