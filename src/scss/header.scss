@@ -178,6 +178,7 @@
         display: none;
         flex-direction: column;
         justify-content: start;
+        position: fixed;
         align-items: start;
         padding: 20px;
         margin-left: -100%;
@@ -189,7 +190,7 @@
         transition: all 1s ease;
     }
     .menu-open .links{
-        margin-top: 0;
+        margin-top: 100px;
         margin-left: -20px;
         display: flex;
         transition: all 1.5s ease;
