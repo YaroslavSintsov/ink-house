@@ -7,7 +7,7 @@ a{
     color: $mainColor;
 }
 .link{
-    padding: 5px;
+    padding: 5px 0;
 }
 .head{
     display: flex;
@@ -20,6 +20,9 @@ a{
     gap: 60px;
     font-size: 20px;
     font-weight: 500;
+}
+.l4{
+    width: 20px;
 }
 .logo{
     display: flex;
@@ -47,7 +50,6 @@ a{
         display: block;
     }
     .link{
-        padding: 5px 0;
     }
     .links{
         width: 100%;
@@ -423,7 +425,6 @@ a{
         margin-top: 0;
     }
     .l4{
-        display: none;
     }
     .logo::before{
         display: none;
