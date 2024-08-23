@@ -1,9 +1,43 @@
 .container{
     margin-left: 00px;
 }
+.page__container{
+    z-index: 0;
+}
+.up-text2{
+    display: none;
+}
 .offer-block{
     width: 100%;
     padding-top: 24px;
+}
+.img-cont{
+    margin-top: 80px;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+    flex-grow: 1;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.world-btn{
+    height: 43px;
+    width: 126px;
+    background-color: $headerBackground;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.world-btn:focus{
+    background-color: $colorClick;
+    color: #F4F6F5;
 }
 .offer__container{
     padding: 0;
@@ -57,6 +91,75 @@
         color: #fff;
     }
 }
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: $headerBackground;
+    padding: 20px;
+    font-size: 18px;
+    width: 31.5%;
+    button{
+        align-items: center;
+    }
+}
+.f{
+    margin-left: 0;
+}
+.card-light-text{
+    margin-top: 20px;
+    color: $colorAfter;
+}
+.card-name{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.img-down{
+    gap: 20px;
+    justify-content: space-between;
+}
+.card-type{
+    margin-top: 8px;
+}
+.card-price{
+    margin-top: 30px;
+    font-size: 24px;
+    color: $colorHeaderInk;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.noned{
+    display: none !important;
+}
+.card-btn{
+    width: 100%;
+    height: 65px;
+    font-weight: 500;
+    background-color: transparent;
+    margin-top: auto;
+    align-items: end;
+    color: $colorHeaderInk;
+    border: 2px solid $colorHeaderInk;
+}
+.img-down{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-up{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 0px 40px;
+    align-items: center;
+    font-weight: 500;
+}
+.world{
+    display: flex;
+    gap: 20px;
+}
+.up-text{
+    font-size: 40px;
+}
 @media screen and (max-width: 768px) {
     .offer__container{
         .offer__bird{
@@ -84,6 +187,16 @@
             margin-top: 44px;
             width: 210px;
         }
+    }
+    .card{
+        width: 47%;
+        font-size: 18px;
+    }
+    .img-down{
+        gap: 30px;
+    }
+    .up-text{
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -115,6 +228,32 @@
             width: 37%;
             height: 41.6vw;
         }
+    }
+    .card-name{
+        font-size: 24px;
+    }
+    .card-price{
+        font-size: 20px;
+    }
+    .card-btn{
+        font-size: 16px;
+        height: 50px;
+    }
+    .card{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 690px) {
+    .img-up{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .up-text{
+        font-size: 24px;
+    }
+    .world-btn{
+        width: 115px;
     }
 }
 @media screen and (max-width: 490px) {
@@ -151,4 +290,59 @@
             height: 100vw;
         }
     }
+    .card{
+        width: 100%;
+    }
+    .up-text2{
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    .up-text{
+        display: none;
+    }
+    .card-light-text{
+        margin-top: 20px;
+        color: $colorAfter;
+    }
+    .card-name{
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .img-down{
+        gap: 20px;
+        justify-content: center;
+    }
+    .card-type{
+        margin-top: 8px;
+    }
+    .card-price{
+        margin-top: 30px;
+        font-size: 24px;
+        color: $colorHeaderInk;
+        font-weight: 500;
+    }
+    .card-btn{
+        width: 100%;
+        height: 65px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        color: $colorHeaderInk;
+        border: 2px solid $colorHeaderInk;
+    }
+    .img-up{
+        z-index: 1;
+        width: 100%;
+        overflow: auto;
+    }
+    .world{
+        overflow: auto;
+    }
+}
+.card-btn{
 }
