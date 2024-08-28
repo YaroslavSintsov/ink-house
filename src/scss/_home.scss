@@ -233,6 +233,9 @@
     .img-down{
         grid-template-columns: repeat(2, 1fr);
     }
+    .card-light-text{
+        margin-top: 15px;
+    }
     .up-text{
         font-size: 30px;
     }
@@ -259,6 +262,7 @@
     }
     .card-type{
         margin-top: auto;
+        padding-top: 10px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -290,6 +294,10 @@
             width: 37%;
             height: 41.6vw;
         }
+    }
+    .card-type{
+        margin: 0;
+        padding-top: 10px;
     }
     .card-name{
         font-size: 24px;
@@ -376,6 +384,7 @@
         width: 100%;
         img{
             height: 250px;
+            background-position: center;
         }
     }
     .up-text2{
@@ -423,6 +432,13 @@
         justify-content: center;
         color: $colorHeaderInk;
         border: 2px solid $colorHeaderInk;
+    }
+    .card-light-text{
+        margin-top: 15px;
+    }
+    .card-type{
+        margin: 0;
+        padding-top: 10px;
     }
     .img-up{
         z-index: 1;
