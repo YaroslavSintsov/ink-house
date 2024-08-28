@@ -6,8 +6,11 @@
 // Подключение миксинов
 @import 'base/mixins';
 a{
+  font-weight: 500;
 }
-
+p{
+  font-weight: 500;
+}
 // Подключение шрифтов
 // &display=swap - добавить при подключении из google fonts
 
@@ -82,7 +85,6 @@ $mobileSmall: em(479.98); // Телефоны S
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
 // 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
 $responsiveType: 1;
-
 // Обнуление и общие параметры
 html,
 body {
@@ -106,7 +108,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 10000px;
   // scrollbar-width: thin;
   // scrollbar-color: $sb-thumb $bg; // Бегунок, дорожка
   // Скролл заблокирован
@@ -246,4 +247,19 @@ html body{
 body{
   transition: 0;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .page__container{
+    padding: 0 39px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .page__container{
+    padding: 0 33px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .page__container{
+    padding: 0 15px !important;
+  }
 }

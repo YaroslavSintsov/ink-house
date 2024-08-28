@@ -9,24 +9,31 @@ import * as scroll from './includes/functions/scroll/scroll.js'
 import * as forms from './includes/functions/forms/forms.js'
 
 menuInit()
-let strain1 = document.getElementById('s1')
-let strain2 = document.getElementById('s2')
-let strain3 = document.getElementById('s3')
-let cont1 = document.getElementById('i1')
-let cont2 = document.getElementById('i2')
-let cont3 = document.getElementById('i3')
-strain1.onclick = function(){
-    cont2.classList.add('c2')
-    cont1.classList.remove('c2')
-    cont3.classList.add('c2')
+const buttons = document.querySelectorAll('.world-btn')
+const gallery = document.querySelectorAll('.img-down')
+const clear = (e) => {
+    for (const btn of buttons){
+        btn.classList.remove('active')
+    }
+    for (const cards of gallery){
+        cards.classList.add('noned')
+    }
 }
-strain2.onclick = function(){
-    cont1.classList.add('c2')
-    cont2.classList.remove('c2')
-    cont3.classList.add('c2')
-}
-strain3.onclick = function(){
-    cont1.classList.add('c2')
-    cont3.classList.remove('c2')
-    cont2.classList.add('c2')
+
+for (const cards of gallery){
+    buttons[0].onclick = function(){
+        clear()
+        gallery[0].classList.remove('noned')
+        buttons[0].classList.add('active')
+    }
+    buttons[1].onclick = function(){
+        clear()
+        gallery[1].classList.remove('noned')
+        buttons[1].classList.add('active')
+    }
+    buttons[2].onclick = function(){
+        clear()
+        gallery[2].classList.remove('noned')
+        buttons[2].classList.add('active')
+    }
 }

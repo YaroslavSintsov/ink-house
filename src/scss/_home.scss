@@ -12,13 +12,14 @@
     padding-top: 24px;
 }
 .img-cont{
-    margin-top: 80px;
+    margin-top: 70px;
 }
 .frame{
     display: flex;
     flex-direction: column;
     gap: 0;
     height: 100%;
+    width: 100%;
     flex-grow: 1;
 }
 .card-content{
@@ -48,6 +49,7 @@
     .offer__bird{
         width: 48.7%;
         height: 43.13vw;
+        max-height: 621px;
     }
 }
 .offer__text-block{
@@ -96,10 +98,14 @@
     flex-direction: column;
     background-color: $headerBackground;
     padding: 20px;
+    padding-bottom: 30px;
     font-size: 18px;
-    width: 31.5%;
     button{
         align-items: center;
+    }
+    img{
+        width: 100% !important;
+        max-height: 100vw !important;
     }
 }
 .f{
@@ -116,17 +122,17 @@
 }
 .img-down{
     gap: 20px;
-    justify-content: space-between;
 }
 .card-type{
     margin-top: 8px;
 }
 .card-price{
-    margin-top: 30px;
     font-size: 24px;
     color: $colorHeaderInk;
     font-weight: 500;
     padding-bottom: 20px;
+    margin-top: auto;
+    padding-top: 30px;
 }
 .noned{
     display: none !important;
@@ -136,29 +142,62 @@
     height: 65px;
     font-weight: 500;
     background-color: transparent;
-    margin-top: auto;
+    margin-top: 0;
     align-items: end;
     color: $colorHeaderInk;
     border: 2px solid $colorHeaderInk;
 }
 .img-down{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 30px;
+    margin-top: 31px;
+    padding-bottom: 20px;
 }
 .img-up{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0px 0px 40px;
     align-items: center;
     font-weight: 500;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 .world{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .up-text{
     font-size: 40px;
+}
+.card-price{
+    font-size: 24px;
+    color: $colorHeaderInk;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 0;
+}
+.card-btn{
+    width: 100%;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $colorHeaderInk;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid $colorHeaderInk;
+}
+.card-type{
+    font-weight: 500;
+    padding-top: 8px;
+    margin-top: auto;
+}
+.card-btn:hover{
+    background-color: $colorHeaderInk;
+    color: #F4F6F5;
+    transition: all 0.5s ease;
 }
 @media screen and (max-width: 768px) {
     .offer__container{
@@ -189,14 +228,37 @@
         }
     }
     .card{
-        width: 47%;
         font-size: 18px;
     }
     .img-down{
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
     .up-text{
         font-size: 30px;
+    }
+    .card-price{
+        font-size: 24px;
+        color: $colorHeaderInk;
+        font-weight: 500;
+        padding-bottom: 0;
+        padding: 0;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    .card-btn{
+        width: 100%;
+        height: 50px;
+        font-weight: 500;
+        display: flex;
+        margin-top: auto;
+        align-items: center;
+        justify-content: center;
+        color: $colorHeaderInk;
+        margin-top: 10px;
+        border: 2px solid $colorHeaderInk;
+    }
+    .card-type{
+        margin-top: auto;
     }
 }
 @media screen and (max-width: 576px) {
@@ -240,7 +302,33 @@
         height: 50px;
     }
     .card{
-        width: 46%;
+        img{
+            max-height: 250px;
+        }
+    }
+    .card-price{
+        font-size: 24px;
+        color: $colorHeaderInk;
+        font-weight: 500;
+        padding-bottom: 0;
+        padding: 0;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    .card-btn{
+        width: 100%;
+        height: 50px;
+        font-weight: 500;
+        display: flex;
+        margin-top: auto;
+        align-items: center;
+        justify-content: center;
+        color: $colorHeaderInk;
+        margin-top: 10px;
+        border: 2px solid $colorHeaderInk;
+    }
+    .card-type{
+        margin-top: auto;
     }
 }
 @media screen and (max-width: 690px) {
@@ -254,12 +342,6 @@
     }
     .world-btn{
         width: 115px;
-    }
-}
-@media screen and (max-width: 490px) {
-    .offer__container{
-        .offer__bird{
-        }
     }
 }
 @media screen and (max-width: 425px) {
@@ -292,6 +374,9 @@
     }
     .card{
         width: 100%;
+        img{
+            height: 250px;
+        }
     }
     .up-text2{
         display: block;
@@ -313,7 +398,9 @@
     }
     .img-down{
         gap: 20px;
+        padding-bottom: 20px;
         justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
     }
     .card-type{
         margin-top: 8px;
@@ -323,14 +410,16 @@
         font-size: 24px;
         color: $colorHeaderInk;
         font-weight: 500;
+        padding-bottom: 0;
+        padding: 0;
     }
     .card-btn{
         width: 100%;
-        height: 65px;
+        height: 50px;
         font-weight: 500;
         display: flex;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 10px;
         justify-content: center;
         color: $colorHeaderInk;
         border: 2px solid $colorHeaderInk;
@@ -338,11 +427,24 @@
     .img-up{
         z-index: 1;
         width: 100%;
+        padding: 0;
+        padding-bottom: 10px;
         overflow: auto;
     }
     .world{
-        overflow: auto;
+        gap: 20px;
     }
 }
-.card-btn{
+.active{
+    background-color: $colorClick;
+    border: 2px solid $colorClick;
+    color: #F4F6F5;
+}
+.world-btn{
+    cursor: pointer;
+}
+.world-btn:hover{
+    background-color: $colorClick;
+    color: #F4F6F5;
+    transition: all 0.5s ease;
 }
