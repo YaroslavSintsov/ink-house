@@ -13,6 +13,7 @@
 }
 .img-cont{
     margin-top: 70px;
+    padding-bottom: 30px;
 }
 .frame{
     display: flex;
@@ -236,12 +237,44 @@
     font-weight: 500;
     margin-top: 70px;
 }
+.about-block{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.text-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.about-title{
+    font-size: 40px;
+}
+.about-text{
+    line-height: 150%;
+}
+.group{
+    width: 130%;
+}
+.pictures{
+    display: flex;
+    gap: 30px;
+}
 @media screen and (max-width: 768px) {
     .offer__container{
         .offer__bird{
             width: 45.4%;
             height: 49.6vw;
         }
+    }
+    .about__container{
+        padding: 0 39px;
     }
     .offer-block{
         padding-top: 10px;
@@ -310,6 +343,17 @@
     .promo-text{
         max-width: 100%;
     }
+    .about{
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+    .group{
+        width: 70.1%;
+    }
+    .text-block{
+        margin: 0;
+    }
 }
 @media screen and (max-width: 576px) {
     .offer__text-block{
@@ -330,6 +374,9 @@
             font-size: 18px;
             margin-top: 11px;
         }
+    }
+    .about__container{
+        padding: 0 33px;
     }
     .offer-block{
         padding-top: 50px;
@@ -395,6 +442,9 @@
     }
     .promo-title{
         font-size: 24px;
+    }
+    .group{
+        width: 70%;
     }
 }
 @media screen and (max-width: 690px) {
@@ -513,6 +563,15 @@
         button{
             width: 100%;
         }
+    }
+    .group{
+        width: 100%;
+    }
+    .about__container{
+        padding: 0 15px;
+    }
+    .picture{
+        height: 76px;
     }
 }
 .active{
