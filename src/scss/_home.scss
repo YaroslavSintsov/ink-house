@@ -199,6 +199,43 @@
     color: #F4F6F5;
     transition: all 0.5s ease;
 }
+.promo-block{
+    min-height: 574px;
+    background-image: url(/img/pic_background.png);
+    width: 100%;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.promo-title{
+    color: #fff;
+    max-width: 421px;
+    font-size: 40px;
+}
+.promo-up-text{
+    display: flex;
+    padding-top: 70px;
+    gap: 20px;
+    align-items: center;
+}
+.promo-text{
+    color: #fff;
+    font-size: 18px;
+    max-width: 500px;
+    margin-top: 20px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.promo-btn{
+    width: 257px;
+    height: 65px;
+    background-color: $iconsColor;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 70px;
+}
 @media screen and (max-width: 768px) {
     .offer__container{
         .offer__bird{
@@ -263,6 +300,15 @@
     .card-type{
         margin-top: auto;
         padding-top: 10px;
+    }
+    .promo-title{
+        font-size: 30px;
+    }
+    .new-collection__container{
+        padding: 0 39px;
+    }
+    .promo-text{
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 576px) {
@@ -337,6 +383,18 @@
     }
     .card-type{
         margin-top: auto;
+    }
+    .new-collection__container{
+        padding: 0 33px;
+    }
+    .promo-up-text{
+        max-width: 371px;
+    }
+    .promo-text{
+        font-size: 16px;
+    }
+    .promo-title{
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 690px) {
@@ -449,6 +507,12 @@
     }
     .world{
         gap: 20px;
+    }
+    .new-collection__container{
+        padding: 0 15px;
+        button{
+            width: 100%;
+        }
     }
 }
 .active{
