@@ -1,0 +1,171 @@
+.footer{
+    padding: 23px 0;
+    background-color: $headerBackground;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+.logo-tel{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $colorHeaderInk;
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.nomer{
+    font-size: 19px;
+    font-weight: 500;
+}
+.light{
+    color: $colorAfter;
+    font-size: 17px;
+}
+.light-block{
+    color: $colorAfter;
+    font-size: 16px;
+}
+.block-title{
+    font-size: 19px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.blocks{
+    display: flex;
+    gap: 60px;
+    margin-top: 10px;
+}
+.block1{
+    display: flex;
+    align-items: start;
+    gap: 80px;
+}
+.tel2{
+    display: none !important;
+}
+.block2{
+    margin-top: 10px;
+}
+.sot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.img-blocks{
+    display: flex;
+    gap: 30px;
+}
+.tel3{
+    display: none;
+}
+.hrefs{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+}
+.href{
+    color: $colorAfter;
+}
+@media screen and (max-width: 930px) {
+    .blocks{
+        display: none;
+    }
+    .foot{
+        display: block;
+    }
+    .logo-tel{
+        flex-direction: inherit;
+        gap: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .tel2{
+        display: flex !important;
+    }
+    .img-blocks{
+        gap: 20px;
+    }
+    .block2{
+        display: flex;
+        align-items: start;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .blocks{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer__container{
+        padding: 0 39px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer__container{
+        padding: 0 33px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .footer__container{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .block2{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .hrefs{
+        flex-direction: row;
+    }
+    .sot::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        top: 0px;
+        width: 100%;
+        background-color: $colorAfter;
+    }
+    .tel2{
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding-bottom: 16px;
+    }
+    .sot{
+        padding-top: 16px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: relative;
+    }
+}
+@media screen and (max-width: 425px) {
+    .tel1{
+        display: none;
+    }
+    .tel3{
+        display: flex;
+    }
+}
